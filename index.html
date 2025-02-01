@@ -1,63 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>C(H)A(O)T</title>
-        <style>
-            body {
-                background-color: white;;
-            }
-            p {
-                color: black;
-            }
-            h1 {
-                text-align: center;
-            }
-            .center {
-                text-align: center;
-            }
-            .groß {
-                font-size: 55px;
-            }
-            .farbe1 {
-                color: brown;
-            }
-        
-        </style>
-    </head>
-    <body>
-        <h1>Willkommen!</h1>
-        <p class="center"
-           class="groß"> 
-            Aboniere jetzt den Whatsapp Kanal C(H)A(O)T und den Zweitkanal
-        </p>
-        <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"> C(H)A(O)T</a>
-        <br>
-        <br>
-        <a href="https://whatsapp.com/channel/0029Vb2BNMB1t90j6ad1r107"> C(H)A(O)T Zweitkanal</a>
-        <p class="groß"
-           class="center">Events:</p>
-        <br>
-        <p class="groß"
-           class="center" >Vergangene Events:</p>
-      <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="1.foto.jpg" height="250px" width="300px"></a>
-        <p class="groß"
-           class="center">Bervohrstehende Events:</p>
-        <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="2.foto.jpg" height="250px" width="300px"></a>
-        <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="3.foto.jpg" height="250px" width="300px"></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="groß"
-           class="center">Ergebnisse der Umfrage:</p>
-    </body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ausklappbarer Ordner</title>
+    <style>
+        .ordner {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 10px;
+            width: 200px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .inhalt {
+            display: none;
+            padding: 10px;
+            background-color: #ddd;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="ordner" onclick="toggleOrdner()">📁 Mein Ordner</button>
+<div class="inhalt">
+    <ul>
+        <li>📄 Datei 1</li>
+        <li>📄 Datei 2</li>
+        <li>📄 Datei 3</li>
+    </ul>
+</div>
+
+<script>
+    function toggleOrdner() {
+        var inhalt = document.querySelector(".inhalt");
+        if (inhalt.style.display === "block") {
+            inhalt.style.display = "none";
+        } else {
+            inhalt.style.display = "block";
+        }
+    }
+</script>
+
+</body>
 </html>
+
+
+
