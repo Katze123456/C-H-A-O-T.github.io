@@ -25,13 +25,19 @@
             background-color: #f1f1f1;
             cursor: pointer;
             padding: 10px;
-            width: 200px;
+            width: 300px;
             border: none;
-            text-align: left;
+            text-align: center;
             outline: none;
-            font-size: 16px;
+            font-size: 20px;
             display: block;
             margin: 20px auto;
+        }
+        .ordner img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
         }
         .inhalt {
             display: none;
@@ -43,6 +49,7 @@
     </style>
 </head>
 <body>
+    <img src="/mnt/data/WhatsApp-Image-2025-01-31-at-18.26.59.jpg" alt="C(H)A(O)T Logo" height="250px" width="300px" style="display:block; margin: 0 auto;">
     <h1>Willkommen!</h1>
     <p class="center groß"> 
         Abonniere jetzt den WhatsApp Kanal C(H)A(O)T und den Zweitkanal
@@ -53,7 +60,9 @@
     
     <p class="groß center">Events:</p>
     
-    <button class="ordner" onclick="toggleOrdner()">📁 Vergangene Events</button>
+    <button class="ordner" onclick="toggleOrdner('eventOrdner')">
+        <img src="/mnt/data/WhatsApp-Image-2025-01-31-at-18.26.59.jpg" alt="Icon"> Vergangene Events
+    </button>
     <div class="inhalt" id="eventOrdner">
         <p class="groß center">Vergangene Events:</p>
         <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G">
@@ -69,23 +78,16 @@
         <img src="3.foto.jpg" height="250px" width="300px">
     </a>
     
-
-    <button class="ordner" onclick="toggleOrdner()">📁 Vergangene Events</button>
-    <div class="inhalt" id="eventOrdner">
-        <p class="groß center">Bevorstehende Events:</p>
-        <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G">
-            <img src="2.foto.jpg" height="250px" width="300px">
-        </a>
-        <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G">
-            <img src="3.foto.jpg" height="250px" width="300px">
-        </a>
+    <button class="ordner" onclick="toggleOrdner('umfrageErgebnisse')">
+        <img src="/mnt/data/WhatsApp-Image-2025-01-31-at-18.26.59.jpg" alt="Icon"> Ergebnisse der Umfrage
+    </button>
+    <div class="inhalt" id="umfrageErgebnisse">
+        <p class="groß center">Ergebnisse der Umfrage:</p>
     </div>
-
-    <p class="groß center">Ergebnisse der Umfrage:</p>
     
     <script>
-        function toggleOrdner() {
-            var inhalt = document.getElementById("eventOrdner");
+        function toggleOrdner(id) {
+            var inhalt = document.getElementById(id);
             if (inhalt.style.display === "block") {
                 inhalt.style.display = "none";
             } else {
