@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html> 
+    <meta charset="UTF-8">
     <head>
         <title>C(H)A(O)T</title>
         <style>
             body {
-                background-color: white;;
-            }
-            p {
+                background: linear-gradient(-45deg, #FFB6C1, #DDA0DD, #ADD8E6, #FFA07A); /* Helle Farben */
+                background-size: 400% 400%;
+                animation: gradientBG 10s ease infinite;
                 color: black;
+                font-family: Arial, sans-serif;
             }
+            
+            @keyframes gradientBG {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            
             h1 {
                 text-align: center;
             }
@@ -18,62 +27,74 @@
             .groß {
                 font-size: 55px;
             }
-            .farbe1 {
-                color: brown;
+            .video-container {
+                margin: 20px 0;
             }
-        
+            .download-link {
+                color: #FF69B4;
+                text-decoration: none;
+                font-size: 18px;
+                display: block;
+                margin-top: 10px;
+            }
         </style>
     </head>
     <body>
-        <h1 class="center">Willkommen!</h1>
-        <p class="center"
-           class="groß"> 
-            Aboniere jetzt den Whatsapp Kanal C(H)A(O)T und den Zweitkanal
+        <h1 class="center">Willkommen bei C(H)A(O)T!</h1>
+        <p class="center groß"> 
+            Trete unserem WhatsApp-Kanal bei und erhalte täglich neue und unterhaltsame Katzeninhalte, inklusive Videos, GIFs und exklusiven Events!
         </p>
-        <a class="groß"
-            class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"> C(H)A(O)T</a>
-        <br>
-        <br>
-        <a class="groß"
-            class="center" href="https://whatsapp.com/channel/0029Vb2BNMB1t90j6ad1r107"> C(H)A(O)T Zweitkanal</a>
-        <p class="groß"
-           class="center">Events:</p>
-        <br>
-        <p class="groß"
-           class="center" >Vergangene Events:</p>
-      <a class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="1.foto.jpg" height="250px" width="300px"></a>
-        <p class="groß"
-           class="center">Bervohrstehende Events:</p>
+        <a class="groß center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"> C(H)A(O)T - Hauptkanal</a>
+        <br><br>
+        <a class="groß center" href="https://whatsapp.com/channel/0029Vb2BNMB1t90j6ad1r107"> C(H)A(O)T - Zweitkanal</a>
+        
+        <h2 class="center">Aktuelle Highlights</h2>
+        <p class="center">Hier findest du eine Auswahl unserer neuesten und beliebtesten Katzenvideos und GIFs:</p>
+        <div class="center video-container">
+            <img src="cat_video1.jpg" height="250px" width="300px">
+            <a href="cat_video1.jpg" class="download-link">Gif 1 herunterladen</a>
+        </div>
+        <div class="center video-container">
+            <img src="cat_video2.jpg" height="250px" width="300px">
+            <a href="cat_video2.jpg" class="download-link">Gif 2 herunterladen</a>
+        </div>
+        <div class="center video-container">
+            <img src="cat_video3.jpg" height="250px" width="300px">
+            <a href="cat_video3.jpg" class="download-link">Gif 3 herunterladen</a>
+        </div>
+        
+        <h2 class="center">Events</h2>
+        <p class="center groß">Vergangene Events:</p>
+        <a class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="1.foto.jpg" height="250px" width="300px"></a>
+        <p class="groß center">Bevorstehende Events:</p>
         <a class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="8.foto.jpg" height="250px" width="300px"></a>
         <a class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="2.foto.jpg" height="250px" width="300px"></a>
         <a class="center" href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="3.foto.jpg" height="250px" width="300px"></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="groß"
-           class="center">Ergebnisse der Umfrage:</p>
-           <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="4.foto.jpg" height="350px" width="550px"></a>
-           <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="5.foto.jpg" height="350px" width="550px"></a>
-           <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="6.foto.jpg" height="350px" width="550px"></a>
-           <a href="https://whatsapp.com/channel/0029Vau6WHh3AzNWmeXohg3G"><img src="7.foto.jpg" height="500px" width="550px"></a>
-        <br>
-        <br>
-        <br>
-        <p>Impressum</p>
-        <br>
-        <p>die Ertseller und besitzer des Whatsapp kanals C(H)A(O)T</p>
-           
-           
-
+        
+        <h2 class="center">Ergebnisse der Community-Umfragen</h2>
+        <div class="center">
+            <img src="4.foto.jpg" height="350px" width="550px">
+            <img src="5.foto.jpg" height="350px" width="550px">
+            <img src="6.foto.jpg" height="350px" width="550px">
+            <img src="7.foto.jpg" height="500px" width="550px">
+        </div>
+        
+        <h2 class="center">Über Uns</h2>
+        <p class="center">C(H)A(O)T ist eine Community für Katzenliebhaber. Unser Ziel ist es, die besten und lustigsten Inhalte aus der Welt der Katzen zu teilen.</p>
+        
+        <h2 class="center">Das erwartet dich:</h2>
+        <ul>
+            <li>Tägliche Katzenvideos und lustige GIFs</li>
+            <li>Witzige Memes und interaktive Inhalte</li>
+            <li>Exklusive Community-Umfragen und Abstimmungen</li>
+            <li>Ankündigungen zu Katzen-Events und Wettbewerben</li>
+            <li>Hintergrundgeschichten zu berühmten Internet-Katzen</li>
+        </ul>
+        
+        <h2 class="center">Warum du dabei sein solltest:</h2>
+        <p class="center">Unsere Community lebt von aktiven Mitgliedern, die sich gegenseitig inspirieren und unterhalten. Werde Teil dieser einzigartigen Erfahrung!</p>
+        
+        <h2 class="center">Impressum</h2>
+        <p class="center">Die Ersteller und Betreiber des WhatsApp-Kanals C(H)A(O)T</p>
     </body>
 </html>
