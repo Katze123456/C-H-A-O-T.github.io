@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW & BMW Motorsport</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>BMW & BMW Motorsport</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Über BMW</a>
+            <a href="#models">Modelle</a>
+            <a href="#motorsport">Motorsport</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="colorSwitch">Farbwechsel</button>
+    </header>
+
+    <!-- Home (mit Parallax-Effekt) -->
+    <section id="home" class="hero">
+        <h2 class="fade-in">Willkommen bei BMW</h2>
+        <p class="fade-in">Erlebe die Faszination von Fahrfreude und Motorsport.</p>
+    </section>
+
+    <!-- Über BMW -->
+    <section id="about" class="fade-in">
+        <h2>Über BMW</h2>
+        <p>BMW steht für Luxus, Sportlichkeit und Innovation – seit 1916.</p>
+        <img src="https://source.unsplash.com/800x400/?bmw,car" alt="BMW Fahrzeug">
+    </section>
+
+    <!-- BMW Modelle -->
+    <section id="models" class="fade-in">
+        <h2>BMW Modellreihen</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://source.unsplash.com/400x250/?bmw,m3" alt="BMW M3">
+                <h3>BMW M3</h3>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x250/?bmw,m5" alt="BMW M5">
+                <h3>BMW M5</h3>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x250/?bmw,i8" alt="BMW i8">
+                <h3>BMW i8</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMW Motorsport -->
+    <section id="motorsport" class="fade-in">
+        <h2>BMW Motorsport</h2>
+        <p>BMW hat die Motorsport-Welt mit ikonischen Erfolgen geprägt.</p>
+    </section>
+
+    <!-- Galerie mit Slider -->
+    <section id="gallery" class="fade-in">
+        <h2>Galerie</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="https://source.unsplash.com/800x600/?bmw,sportscar" alt="BMW Sportwagen">
+                <img src="https://source.unsplash.com/800x600/?bmw,racing" alt="BMW Racing">
+                <img src="https://source.unsplash.com/800x600/?bmw,classic" alt="BMW Classic">
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <img class="lightbox" src="https://source.unsplash.com/400x300/?bmw,sportscar" alt="BMW Sportwagen">
+            <img class="lightbox" src="https://source.unsplash.com/400x300/?bmw,racing" alt="BMW Racing">
+            <img class="lightbox" src="https://source.unsplash.com/400x300/?bmw,classic" alt="BMW Classic">
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="fade-in">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" placeholder="Dein Name" required>
+            <input type="email" placeholder="Deine E-Mail" required>
+            <textarea placeholder="Deine Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BMW Fanpage | Erstellt von Dir 🚘</p>
+    </footer>
+
+</body>
+</html>
